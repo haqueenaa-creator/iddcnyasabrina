@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#002019",
+                    "secondary-container": "#fed488",
+                    "inverse-primary": "#95d3ba",
+                    "secondary-fixed": "#ffdea5",
+                    "on-primary-fixed-variant": "#0b513d",
+                    "inverse-surface": "#2e3132",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#404944",
+                    "background": "#f8f9fa",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed": "#261900",
+                    "surface-container": "#edeeef",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#13332c",
+                    "on-secondary-container": "#785a1a",
+                    "error": "#ba1a1a",
+                    "surface-variant": "#e1e3e4",
+                    "tertiary-fixed": "#c7eade",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "primary-fixed": "#b0f0d6",
+                    "inverse-on-surface": "#f0f1f2",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-tertiary-container": "#96b9ae",
+                    "tertiary-container": "#2a4a41",
+                    "outline": "#707974",
+                    "surface": "#f8f9fa",
+                    "on-primary-fixed": "#002117",
+                    "surface-bright": "#f8f9fa",
+                    "secondary-fixed-dim": "#e9c176",
+                    "tertiary-fixed-dim": "#abcec2",
+                    "surface-tint": "#2b6954",
+                    "error-container": "#ffdad6",
+                    "surface-container-high": "#e7e8e9",
+                    "primary-fixed-dim": "#95d3ba",
+                    "on-primary-container": "#80bea6",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#2d4d44",
+                    "primary": "#003527",
+                    "surface-container-low": "#f3f4f5",
+                    "on-tertiary": "#ffffff",
+                    "surface-dim": "#d9dadb",
+                    "on-surface": "#191c1d",
+                    "outline-variant": "#bfc9c3",
+                    "on-background": "#191c1d",
+                    "primary-container": "#064e3b",
+                    "secondary": "#775a19"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-mask {
+            mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f8f9fa] dark:bg-[#191c1d] flex justify-between items-center px-6 py-4 w-full shadow-none border-none">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#003527] dark:text-[#064e3b] active:scale-95 transition-transform cursor-pointer">menu</span>
+<img alt="IDDC Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhfbRd6fUdzybZ5wUAqMkH1VvmV9cqDfso_VDzt6iDujC0qLw5PJdsVyZ_hqOBLT6y9hfcRvSjxJH-c-27_kQO6abemXjN8BuQF34FVMWGSi--KPuxV8DobSm3DpxRp6alsmdnv0ekfijhMdSZHYFPnFe17yEoopa1FjC2Gl0vAgvjJR4SQ41BIHvvd0y93YoVxgzh1BH-EFVTN0kvLFIermkQoogMw8brUEu851m1y84xjlmUVAA1DvMeA7eKQ3kICAOYppkRs"/>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-[#003527] dark:text-[#f8f9fa] font-label text-sm uppercase tracking-wider hover:bg-[#edeeef] transition-colors duration-300 px-3 py-2 rounded" href="index.html">Beranda</a>
+<a class="text-[#003527] dark:text-[#f8f9fa] font-label text-sm uppercase tracking-wider hover:bg-[#edeeef] transition-colors duration-300 px-3 py-2 rounded" href="profil.html">Profil</a>
+<a class="text-[#775a19] font-bold font-label text-sm uppercase tracking-wider transition-colors" href="karya.html">Akademik</a>
+<a class="text-[#003527] dark:text-[#f8f9fa] font-label text-sm uppercase tracking-wider hover:bg-[#edeeef] transition-colors duration-300 px-3 py-2 rounded" href="pmb.html">Pendaftaran</a>
+</nav>
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-fixed">
+<img alt="Profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJVHgqSyFmRGQuNwwyf_6N8m26G8kg-C9BzzAnmy8GaW5NO73RNB5ti7DIXjGTtJJG5pDS93O_-LrT8p2_dYQHG1Chv7bZeh73jC3F9t1m5cmMgBWzETgXPH-l13ufet54vQN-H16FH4p3i3d7KE8LMcgvKNzCHGS48akVKabysf28Ks7wHtPgSRxjJwR4nI7UzrFhonoFbWI9IkFUfaYnrq-WmBaEezT6KXDLK9VVHhghRunBRmMe7H9N3gkvED5ThLQA7vBE4kI"/>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-20">
+<!-- Hero Section: Karya Santri -->
+<section class="px-6 md:px-12 lg:px-24 mb-16">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end gap-6 mb-12">
+<div class="flex-1">
+<span class="text-secondary font-headline font-bold uppercase tracking-widest text-sm mb-4 block">Arsip Kreatif</span>
+<h2 class="text-5xl md:text-7xl font-headline font-extrabold text-primary leading-tight tracking-tighter">Karya santri</h2>
+</div>
+<div class="max-w-md pb-2">
+<p class="text-on-surface-variant font-body text-lg border-l-4 border-secondary-container pl-6 py-2">Pameran kurasi keahlian intelektual, di mana tradisi bertemu dengan ekspresi digital modern melalui lensa para santri kami.</p>
+</div>
+</div>
+<!-- Bento Grid Gallery -->
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-auto md:h-[800px]">
+<!-- Featured Poster -->
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm group">
+<div class="relative h-full overflow-hidden">
+<img alt="Poster Design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="elegant minimalist islamic poster design with intricate geometric gold patterns on a deep emerald green background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqVdXYBKKVh-NiMdOUWAd85kAGPlaS7nwLXwgkqGGxZ5GycV0x5W29T-4JrZ5_3zA_MA-BK3G4aTLte-9IlQEgmHBPCspRAkWT6pITls5ZgY2kE2MUR2VwNPxE3TJvqlJNE0vTrTKCBFQ5JciwdXOyKuxQKSUXduIPO9eAd0XC4BRZRigcnwdo0xN3uHdr85pcmq3C7CXRdua3zFw9xLBUjSzmZp6ZFOX3ZK7EbkUu43q2J1zVlz_WVB-E6Zn7L0KUwAgaP-O-2j0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded text-xs font-bold w-fit mb-2">Desain Grafis</span>
+<h3 class="text-white text-2xl font-headline font-bold">Geometri Emas</h3>
+</div>
+</div>
+</div>
+<!-- Animation Still -->
+<div class="md:col-span-2 bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm group">
+<div class="relative h-full overflow-hidden">
+<img alt="Animation Project" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="modern 3D abstract digital art with flowing fluid shapes in shades of teal and gold, cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCda6ksWbjhTPLAeeSb6cN9iUD7HeFHMI6sQmGyCZpnDs44HCnx5hjbepQQSQh44Tkax8QnXKWLoDqc6esHc_30wHW0-Xqj3qaIuuGjtd9ebIlSIIXqmpArMRlEh8b99BvUNI-x5BUYaEuol1-YG91hqo61JtJdUCtUxmgX7oc1TBzdJH3ZOHdoZz4Yg88GiazbIeJYwmdsXzV2nmLO3b6tR_0-I6U6GCcnmrkI_uRZnq3VqAa6etL7zgp4382mV4e-JXCwptrs31k"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded text-xs font-bold w-fit mb-2">Grafis Gerak</span>
+<h3 class="text-white text-xl font-headline font-bold">Aliran Ethereal Vol. 2</h3>
+</div>
+<div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md rounded-full p-2">
+<span class="material-symbols-outlined text-white">play_circle</span>
+</div>
+</div>
+</div>
+<!-- Digital Illustration -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm group">
+<div class="relative h-full overflow-hidden">
+<img alt="Student Work" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="vibrant abstract expressionist digital painting with bold brushstrokes of emerald and ochre" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk5PEVKfpvuIMnpkTz1GhxsRDpwnmkv80cVm2Dwt_yOLdCHuZfGJhJJAULr6m5d0os3D43ZMXu38-jXmuO_wDpFPx9CzQ3MljUZO-Z3vk2PPREyn8YNNNm9l639AafgaO5uq7FyXOovU0faDyr85yXYxgjTyM12VOdVSYS_JZt9qNKq1sr5FMUgsg6S3r28tck-JfaTAXzlVzDcPwU0-71LzxRGkRzGWeCyTOtC615u6zlTIhHMiNa_CLVPIs3HSbM2d3MGjEvIXk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="text-white text-sm font-headline font-bold">Warisan Abstrak</h3>
+</div>
+</div>
+</div>
+<!-- Video Project -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm group">
+<div class="relative h-full overflow-hidden">
+<img alt="Cinematography" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="moody cinematic close-up of an old manuscript being written with a traditional reed pen and ink" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB4bvvgAanTtk2aSsSiZGDIQebtpObH9oMt0nCXpTqCvjeoYoyYxxvtFmfiXFp348ecvAvOUSvcLBkIEwkxULh6MhUcfdN8z0Oh5qeMETThPvkL0wF11UC5y8exRuD9wyri68WOrgsDXmzuNSiLCPugthsXgqhnW3SLegQWvbQbwiaVUKI-5yjrbnsFGPmTpZ34P_-Eu0moj_e7d1kg8XsPq2CNVUmTnS_OXN1duq2-SUDpV0u-EXMDQ6E_nt1LGNo8e9xaXxqFVI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="text-white text-sm font-headline font-bold">Tinta Kebijaksanaan</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Separation Section with Subtle Islamic Pattern -->
+<div class="w-full h-24 bg-surface-container flex items-center justify-center opacity-40">
+<div class="flex gap-12 overflow-hidden whitespace-nowrap">
+<span class="material-symbols-outlined text-4xl text-primary opacity-20">ac_unit</span>
+<span class="material-symbols-outlined text-4xl text-primary opacity-20">ac_unit</span>
+<span class="material-symbols-outlined text-4xl text-primary opacity-20">ac_unit</span>
+<span class="material-symbols-outlined text-4xl text-primary opacity-20">ac_unit</span>
+<span class="material-symbols-outlined text-4xl text-primary opacity-20">ac_unit</span>
+<span class="material-symbols-outlined text-4xl text-primary opacity-20">ac_unit</span>
+<span class="material-symbols-outlined text-4xl text-primary opacity-20">ac_unit</span>
+<span class="material-symbols-outlined text-4xl text-primary opacity-20">ac_unit</span>
+<span class="material-symbols-outlined text-4xl text-primary opacity-20">ac_unit</span>
+</div>
+</div>
+<!-- Testimonials Section: Kata Alumni -->
+<section class="bg-surface-container-low py-24 px-6 md:px-12 lg:px-24">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16 text-center">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold text-primary mb-4 tracking-tight">Kata Alumni</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Suara para lulusan kami yang menjembatani warisan tradisional dengan keunggulan profesional kontemporer.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10 relative overflow-hidden flex flex-col">
+<div class="absolute -top-4 -right-4">
+<span class="material-symbols-outlined text-8xl text-secondary-container/20">format_quote</span>
+</div>
+<div class="relative z-10 flex-1">
+<p class="text-on-surface italic text-lg leading-relaxed mb-8">"IDDC memberikan lebih dari sekadar pendidikan; ia menawarkan tempat perlindungan bagi pertumbuhan intelektual. Perpaduan studi teologis dengan prinsip-prinsip desain modern memungkinkan saya meluncurkan agensi kreatif saya sendiri dengan landasan spiritual yang unik."</p>
+</div>
+<div class="flex items-center gap-4 border-t border-surface-container pt-6">
+<img alt="Alumni Portrait" class="w-14 h-14 rounded-full object-cover" data-alt="professional woman portrait with warm lighting, wearing modest attire, smiling confidently against a soft blurred office background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS3GvTR7FUGea7IkKTWW_DSgiJMbmpIukdZ2CCRJQMcERP3EUraFY25uplC8eoGmbkbUXfgFBFkSd8n6_BBvdcp3U28e_yE4OUb1M-skDZSf3LgujQsEip92OOz9rOmq8i1Lv8KqrqLuGPQsHhs004tAFPGskf2Bj7_SccXUIPN1U-l5JkD4W3ehYDAmoty04Zqj3SUw5Zib5mlxBihQPy_XTUdU7C9Mm3beYINwDaOTLup_JqNvIFoPV5JLjTxfwda3APS76sqho"/>
+<div>
+<h4 class="font-headline font-bold text-primary">Sarah Al-Zahra</h4>
+<p class="text-xs text-on-surface-variant font-medium">Pendiri di Radiant Creative, Angkatan 2021</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-primary text-white p-8 rounded-2xl shadow-xl relative overflow-hidden flex flex-col transform md:-translate-y-4">
+<div class="absolute -top-4 -right-4">
+<span class="material-symbols-outlined text-8xl text-white/5" data-weight="fill">format_quote</span>
+</div>
+<div class="relative z-10 flex-1">
+<p class="italic text-xl leading-relaxed mb-8 text-primary-fixed">"Komunitas di IDDC tidak tertandingi. Saya menemukan mentor yang menantang perspektif saya dan rekan-rekan yang menjadi kolaborator seumur hidup. Fasilitas teknisnya sangat canggih, sebanding dengan universitas global mana pun."</p>
+</div>
+<div class="flex items-center gap-4 border-t border-primary-container pt-6">
+<img alt="Alumni Portrait" class="w-14 h-14 rounded-full object-cover" data-alt="professional man portrait with subtle scholarly atmosphere, soft studio lighting, intelligent expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL4XPuH7x_UAEONEntarDpQPkJnj_tmHB8FzoEwEQz47W5nBQuzUIUREa6gofZ-DTfoA1E5mN4khHv-f8J3D87qe7HzcCOYq9NHACbk3ZtOBIOxH3OlgIiZR0D5ke3VRjzd_rfzUshVfyPko-bpgrAj5-0QrPuOVE-RI8XdBt1OXUY1-x-bPA4xj9IXJ-uxI-xqeq9nUGqed-R8xbj6Xf1i5uMieIMgtWMDwz8xbKojlPrcWXEYzjjHvsP6ZMCY5riwlj88b8bib8"/>
+<div>
+<h4 class="font-headline font-bold">Faris Hakim</h4>
+<p class="text-xs text-primary-fixed-dim font-medium">Pengembang Full-stack, Angkatan 2019</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10 relative overflow-hidden flex flex-col">
+<div class="absolute -top-4 -right-4">
+<span class="material-symbols-outlined text-8xl text-secondary-container/20">format_quote</span>
+</div>
+<div class="relative z-10 flex-1">
+<p class="text-on-surface italic text-lg leading-relaxed mb-8">"Sanctuary digital bukan sekadar slogan. Belajar di sini terasa seperti menjadi bagian dari arsip kuno yang tiba-tiba hidup kembali dengan alat modern. Ini membentuk karier saya sebagai arsiparis digital dengan cara yang tidak pernah saya bayangkan sebelumnya."</p>
+</div>
+<div class="flex items-center gap-4 border-t border-surface-container pt-6">
+<img alt="Alumni Portrait" class="w-14 h-14 rounded-full object-cover" data-alt="confident professional woman educator smiling warmly, soft natural lighting, high-end editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy930y0xsWDva-4fP8Mi5V0dVXuJWtkyOiG7081D_dYd2T8HtnXczEcZhjpWdHsBdIgi-WDeL2DKHlJ05xb0sh0fLxl7IV9d73XYjLbufuPq-d7nKdCJxPki4t8RSzyCkCfahvloZPXjwm8HWaUq579Qt1dwC71N5I4wdPRcuSjih1tFh28Iuy0zSzTHf2O5MsYsisyWoPHw2uNZ-ZMWULlEkxYHP-1kWB6JTbPyUDiUzZ_eWDDqW40wMcmJ4iweF9LndG_lbOUrw"/>
+<div>
+<h4 class="font-headline font-bold text-primary">Dr. Aisha Khan</h4>
+<p class="text-xs text-on-surface-variant font-medium">Peneliti Budaya, Angkatan 2018</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 bg-[#edeeef] dark:bg-[#0c0d0d] flex flex-col items-center justify-center space-y-4 px-8">
+<div class="flex flex-col items-center gap-6">
+<h2 class="font-manrope font-bold text-[#003527] text-2xl"><img alt="IDDC Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhfbRd6fUdzybZ5wUAqMkH1VvmV9cqDfso_VDzt6iDujC0qLw5PJdsVyZ_hqOBLT6y9hfcRvSjxJH-c-27_kQO6abemXjN8BuQF34FVMWGSi--KPuxV8DobSm3DpxRp6alsmdnv0ekfijhMdSZHYFPnFe17yEoopa1FjC2Gl0vAgvjJR4SQ41BIHvvd0y93YoVxgzh1BH-EFVTN0kvLFIermkQoogMw8brUEu851m1y84xjlmUVAA1DvMeA7eKQ3kICAOYppkRs"/></h2>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-[#003527] dark:hover:text-white underline transition-opacity duration-200" href="#">Kebijakan Privasi</a>
+<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-[#003527] dark:hover:text-white underline transition-opacity duration-200" href="#">Dukungan Kontak</a>
+<a class="font-inter text-xs uppercase tracking-widest text-slate-500 hover:text-[#003527] dark:hover:text-white underline transition-opacity duration-200" href="#">Portal Mahasiswa</a>
+</div>
+<p class="font-inter text-xs uppercase tracking-widest text-[#003527] dark:text-emerald-500 text-center">© 2024 IDDC. Menjembatani Warisan dan Masa Depan Akademisi.</p>
+</div>
+</footer>
+</body></html>
